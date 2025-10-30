@@ -65,7 +65,7 @@ $badge-border-radius: 20px;
 $input-border-radius: 20px;
 $btn-border-radius: 20px;
 
-// ESERCIZIO 12 - 13
+// ESERCIZIO 12 - 13 - 14
 
 $new-colors: (
   epicode-1: #5726c3,
@@ -74,6 +74,12 @@ $new-colors: (
 );
 
 $theme-colors: map-merge($theme-colors, $new-colors);
+
+// ESERCIZIO 15
+
+$new-grid-breakpoints: (
+  3xl: 1600px,
+);
 
 // IMPORT FINALE
 @import "./scss/bootstrap.scss";
