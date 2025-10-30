@@ -1,0 +1,47 @@
+@import "./scss/functions";
+@import "./scss/variables";
+
+// ESERCIZIO 1
+
+$h7-font-size: $font-size-base * 0.75 !default;
+$h8-font-size: $font-size-base * 0.5 !default;
+$h9-font-size: $font-size-base * 0.25 !default;
+$h10-font-size: $font-size-base * 0.15 !default;
+
+$new-font-sizes: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+  10: $h10-font-size,
+) !default;
+
+$font-sizes: map-merge($font-sizes, $new-font-sizes);
+
+// ESERCIZIO 2
+
+$new-border-widths: (
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+) !default;
+
+$border-widths: map-merge($border-widths, $new-border-widths);
+
+// ESERCIZIO 5
+
+$new-input-btn-padding-y: 0.75rem !default;
+$new-input-btn-padding-x: 2.5rem !default;
+
+$input-btn-padding-y: $new-input-btn-padding-y;
+$input-btn-padding-x: $new-input-btn-padding-x;
+
+// ESERCIZIO 6
+
+$new-grid-gutter-width: 0.5rem !default;
+
+$grid-gutter-width: $new-grid-gutter-width;
+
+// IMPORT FINALE
+@import "./scss/bootstrap.scss";
